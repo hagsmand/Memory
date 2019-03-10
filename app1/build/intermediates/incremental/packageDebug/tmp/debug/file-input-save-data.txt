@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Fri Nov 23 20:12:10 ICT 2018
+0.baseType=DIRECTORY
+0.base=C\:\\Face-memory-master\\app1\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.path=classes.dex
+0.set=DEX
+count=1

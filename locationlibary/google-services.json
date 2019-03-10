@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "682871551118",
+    "firebase_url": "https://memoryfinal-a469e.firebaseio.com",
+    "project_id": "memoryfinal-a469e",
+    "storage_bucket": "memoryfinal-a469e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682871551118:android:76dc8d4cf94a6bae",
+        "android_client_info": {
+          "package_name": "ch.zhaw.facerecognition"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "682871551118-u3t8fn015nti3jikvuv9ji482slp27iq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4mVR8sbvdawpzsZeZOemySyPR8NOx5Q4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682871551118:android:d0d33db2a2f84f2b",
+        "android_client_info": {
+          "package_name": "com.example.locationlibary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "682871551118-u3t8fn015nti3jikvuv9ji482slp27iq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4mVR8sbvdawpzsZeZOemySyPR8NOx5Q4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+     Copyright 2016 Michael Sladoje and Mike Schälchli. All Rights Reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ch.zhaw.facerecognition">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera2" android:required="true"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front.autofocus"
+        android:required="false" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_app4"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".Activities.RecognitionActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/noAnimTheme">
+
+        </activity>
+        <activity android:name=".Activities.TrainingActivity" />
+        <activity
+            android:name=".Activities.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".Activities.AddPersonActivity" />
+        <activity
+            android:name=".Activities.AddPersonPreviewActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".Activities.DetectionActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name=".Activities.ShowName" />
+        <activity android:name=".Activities.DeletePerson" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".Activities.MainFace"  />
+        <activity android:name="com.example.locationlibary.MainLocation" />
+        <activity android:name="com.example.locationlibary.LoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.example.locationlibary.FriendActivity" />
+        <activity android:name="com.example.locationlibary.MapsActivity" />
+
+        <activity android:name=".Activities.MapsActivity"/>
+        <activity android:name=".Activities.FriendActivity"/>
+
+        <service android:name=".Activities.MyService"
+             android:enabled="true" android:exported="true"/>
+
+        <receiver android:name=".Activities.MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.SCREEN_ON"/>
+                <action android:name="android.intent.action.SCREEN_OFF"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Activities.Home"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Activities.SplashScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.LoginActivity"   android:screenOrientation="portrait"  />
+        <activity android:name=".Activities.Register"></activity>
+
+
+    </application>
+
+
+</manifest>
